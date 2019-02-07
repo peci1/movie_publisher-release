@@ -1,3 +1,26 @@
+## movie_publisher (kinetic) - 1.2.1-0
+
+The packages in the `movie_publisher` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release -r kinetic movie_publisher --edit` on `Thu, 07 Feb 2019 04:29:37 -0000`
+
+The `movie_publisher` package was released.
+
+Version of package(s) in repository `movie_publisher`:
+
+- upstream repository: https://github.com/peci1/movie_publisher.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.2.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.7.2`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.15.0`
+- rosdistro version: `0.7.2`
+- vcstools version: `0.1.40`
+
+
 ## movie_publisher (indigo) - 1.1.1-1
 
 The packages in the `movie_publisher` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo movie_publisher` on `Thu, 07 Feb 2019 04:18:30 -0000`
