@@ -1,0 +1,40 @@
+ros-kinetic-movie-publisher (1.2.2-1xenial) xenial; urgency=high
+
+  * Made imageio and moviepy mandatory dependencies (they will be removed from package.xml in release repo)
+  * Contributors: Martin Pecka
+
+ -- Martin Pecka <peckama2@fel.cvut.cz>  Wed, 06 Mar 2019 23:00:00 -0000
+
+ros-kinetic-movie-publisher (1.2.1-1xenial) xenial; urgency=high
+
+  * Fixed permissions.
+  * Kinetic release.
+  * Moved to python from bc, because it is not installed everywhere.
+  * More informative error strings.
+  * Updated to the fixed version rosbash_params==1.0.2.
+  * Contributors: Martin Pecka
+
+ -- Martin Pecka <peckama2@fel.cvut.cz>  Wed, 06 Feb 2019 23:00:00 -0000
+
+ros-kinetic-movie-publisher (1.1.0-1xenial) xenial; urgency=high
+
+  * Added checks for exit codes to bash scripts.
+  * Fixed install targets.
+  * Added python-opencv alternative backend. This resolves debian packaging issues.
+  * Contributors: Martin Pecka
+
+ -- Martin Pecka <peckama2@fel.cvut.cz>  Sun, 27 Jan 2019 23:00:00 -0000
+
+ros-kinetic-movie-publisher (1.0.1-1xenial) xenial; urgency=high
+
+  * Fixed install rule.
+  * Documented all tools in readme.
+  * Added support for rewriting timestamps from TF messages.
+  * Fix Python3 compatibility. Added fix_bag_timestamps.
+  * Added readme.
+  * Initial commit.
+  * Contributors: Martin Pecka
+
+ -- Martin Pecka <peckama2@fel.cvut.cz>  Thu, 24 Jan 2019 23:00:00 -0000
+
+
