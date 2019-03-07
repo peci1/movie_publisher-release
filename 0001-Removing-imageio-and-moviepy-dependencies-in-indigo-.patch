@@ -1,8 +1,8 @@
 From cfd91221147f2466989455f00927efba6d2d708f Mon Sep 17 00:00:00 2001
 From: Martin Pecka <peci1@seznam.cz>
 Date: Thu, 7 Mar 2019 04:01:06 +0100
-Subject: [PATCH 2/2] Removing imageio and moviepy dependencies in indigo
- release as they can only be installed via pip.
+Subject: [PATCH] Removing imageio and moviepy dependencies in indigo release
+ as they can only be installed via pip.
 
 ---
  package.xml | 4 ++--
