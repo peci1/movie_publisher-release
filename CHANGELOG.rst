@@ -2,6 +2,11 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.2 (2019-03-07)
+------------------
+* Made imageio and moviepy mandatory dependencies (they will be removed from package.xml in release repo)
+* Contributors: Martin Pecka
+
 1.1.1 (2019-02-07)
 ------------------
 * Fixed permissions.
