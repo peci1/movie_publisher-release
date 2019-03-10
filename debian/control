@@ -8,5 +8,5 @@ Standards-Version: 3.9.2
 
 Package: ros-melodic-movie-publisher
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, imageio, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, python-opencv, ros-melodic-cv-bridge, ros-melodic-rosbash-params (>= 1.0.2), ros-melodic-rospy, ros-melodic-sensor-msgs
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, python-opencv, ros-melodic-cv-bridge, ros-melodic-rosbash-params (>= 1.0.2), ros-melodic-rospy, ros-melodic-sensor-msgs
 Description: Node for using a video file as video topic source.
