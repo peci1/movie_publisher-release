@@ -58,13 +58,12 @@ tracks:
       -i :{release_inc} --os-name ubuntu
     - git-bloom-generate -y rosdebian --prefix debian/:{ros_distro}/stretch :{ros_distro}
       -i :{release_inc} --os-name debian --os-not-required
-    - git-bloom-generate -y rosrpm --prefix rpm/:{ros_distro} :{ros_distro} -i
-      :{release_inc}
+    - git-bloom-generate -y rosrpm --prefix rpm/:{ros_distro} :{ros_distro} -i :{release_inc}
     devel_branch: melodic-devel
     last_version: 1.3.0
     name: upstream
     patches: null
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: git@github.com:peci1/movie_publisher-release.git
     release_tag: :{version}
     ros_distro: melodic
