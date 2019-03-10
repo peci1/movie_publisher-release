@@ -15,8 +15,8 @@
   <!--exec_depend>bag_tools</exec_depend--> <!-- not released for melodic/bionic -->
   <exec_depend>cv_bridge</exec_depend>
   <exec_depend>ffmpeg</exec_depend>
-  <!--exec_depend>python-imageio</exec_depend--> <!-- cannot be installed via default rosdep installer -->
-  <!--exec_depend>python-moviepy-pip</exec_depend--> <!-- cannot be installed via default rosdep installer --> <!-- recommended but optional dependency -->
+  <exec_depend>python-imageio</exec_depend>
+  <!--exec_depend>python-moviepy-pip</exec_depend--> <!-- recommended but optional dependency -->
   <exec_depend>python-opencv</exec_depend>
   <exec_depend version_gte="1.0.2">rosbash_params</exec_depend>
   <exec_depend>rospy</exec_depend>
