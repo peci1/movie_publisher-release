@@ -1,0 +1,28 @@
+From ac702e1c19e127087541f5b19b561e73e3a5f0ed Mon Sep 17 00:00:00 2001
+From: Martin Pecka <peckama2@fel.cvut.cz>
+Date: Sun, 10 Mar 2019 02:31:49 +0100
+Subject: [PATCH] Removing imageio and moviepy dependencies in melodic/debian
+ release as they can only be installed via pip.
+
+---
+ package.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/package.xml b/package.xml
+index dde1030..e65390b 100644
+--- a/package.xml
++++ b/package.xml
+@@ -15,8 +15,8 @@
+   <!--exec_depend>bag_tools</exec_depend--> <!-- not released for melodic/bionic -->
+   <exec_depend>cv_bridge</exec_depend>
+   <exec_depend>ffmpeg</exec_depend>
+-  <exec_depend>python-imageio</exec_depend>
+-  <!--exec_depend>python-moviepy-pip</exec_depend--> <!-- recommended but optional dependency -->
++  <!--exec_depend>python-imageio</exec_depend--> <!-- cannot be installed via default rosdep installer -->
++  <!--exec_depend>python-moviepy-pip</exec_depend--> <!-- cannot be installed via default rosdep installer --> <!-- recommended but optional dependency -->
+   <exec_depend>python-opencv</exec_depend>
+   <exec_depend version_gte="1.0.2">rosbash_params</exec_depend>
+   <exec_depend>rospy</exec_depend>
+-- 
+2.17.1
+
