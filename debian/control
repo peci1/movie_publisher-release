@@ -1,0 +1,12 @@
+Source: ros-melodic-movie-publisher
+Section: misc
+Priority: extra
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-movie-publisher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, python-imageio, python-opencv, ros-melodic-cv-bridge, ros-melodic-rosbash-params (>= 1.0.2), ros-melodic-rospy, ros-melodic-sensor-msgs
+Description: Node for using a video file as video topic source.
