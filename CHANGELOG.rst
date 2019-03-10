@@ -2,14 +2,15 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.1.2 (2019-03-07)
+1.3.0 (2019-03-10)
 ------------------
-* Made imageio and moviepy mandatory dependencies (they will be removed from package.xml in release repo)
+* Updated for melodic.
 * Contributors: Martin Pecka
 
-1.1.1 (2019-02-07)
+1.2.1 (2019-02-07)
 ------------------
 * Fixed permissions.
+* Kinetic release.
 * Moved to python from bc, because it is not installed everywhere.
 * More informative error strings.
 * Updated to the fixed version rosbash_params==1.0.2.
