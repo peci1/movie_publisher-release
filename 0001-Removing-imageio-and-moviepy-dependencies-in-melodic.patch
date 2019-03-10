@@ -1,8 +1,8 @@
-From 3b0298e31458dab1558b79dc4accbbac9f3746c1 Mon Sep 17 00:00:00 2001
+From 3aa1bea08441718bade826c3d96ad31ddf86fa1e Mon Sep 17 00:00:00 2001
 From: Martin Pecka <peckama2@fel.cvut.cz>
-Date: Sun, 10 Mar 2019 03:05:56 +0100
-Subject: [PATCH] Removing imageio and moviepy dependencies in
- melodic/debian/stretch release as they can only be installed via pip.
+Date: Sun, 10 Mar 2019 06:53:13 +0100
+Subject: [PATCH] Removing imageio and moviepy dependencies in melodic release
+ as they can only be installed via pip.
 
 ---
  package.xml | 4 ++--
