@@ -1,8 +1,8 @@
-From 074543a3a681a234abee3e6a551b47cad587716c Mon Sep 17 00:00:00 2001
+From 08a1679764ed707d6265888f6675cb723e23ec58 Mon Sep 17 00:00:00 2001
 From: Martin Pecka <peckama2@fel.cvut.cz>
-Date: Sun, 10 Mar 2019 03:04:43 +0100
-Subject: [PATCH] Removing imageio and moviepy dependencies in melodic/fedora
- release as they can only be installed via pip.
+Date: Sun, 10 Mar 2019 06:51:33 +0100
+Subject: [PATCH] Removing imageio and moviepy dependencies in melodic release
+ as they can only be installed via pip.
 
 ---
  package.xml | 4 ++--
