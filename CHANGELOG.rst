@@ -2,6 +2,11 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.1 (2021-04-27)
+------------------
+* Fix pixel format of moviepy videos.
+* Contributors: Martin Pecka
+
 1.3.0 (2019-03-10)
 ------------------
 * Updated for melodic.

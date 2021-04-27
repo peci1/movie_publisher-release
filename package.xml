@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>movie_publisher</name>
-  <version>1.3.0</version>
+  <version>1.3.1</version>
   <description>Node for using a video file as video topic source.</description>
 
   <maintainer email="peckama2@fel.cvut.cz">Martin Pecka</maintainer>
 
   <license>BSD</license>
+  
+  <url type="website">http://www.ros.org/wiki/movie_publisher</url>
 
-  <author >Martin Pecka</author>
+  <author email="peckama2@fel.cvut.cz">Martin Pecka</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
