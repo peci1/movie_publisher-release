@@ -1,0 +1,12 @@
+Source: ros-noetic-movie-publisher
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://www.ros.org/wiki/movie_publisher
+Standards-Version: 3.9.2
+
+Package: ros-noetic-movie-publisher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, python3-imageio, python3-opencv, ros-noetic-cv-bridge, ros-noetic-rosbash-params (>= 1.0.2), ros-noetic-rospy, ros-noetic-sensor-msgs
+Description: Node for using a video file as video topic source.
