@@ -2,6 +2,11 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.0 (2022-06-08)
+------------------
+* Compatibility with Noetic
+* Contributors: Martin Pecka
+
 1.3.1 (2021-04-27)
 ------------------
 * Fix pixel format of moviepy videos.
