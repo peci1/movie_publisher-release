@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: Czech Technical University in Prague
+
 usage=$(cat <<USAGE
 Add a movie file to an existing bagfile as a topic.
 Usage: add_movie_to_bag _movie:=movie.mp4 _bag_in:=source.bag _bag_out:=target.bag _topic:=output_topic_basename [_movie_delay:=0] [_overwrite_out_bag:=false] [_bag_tmp:=/tmp/movie_add_to.bag] [_transport:=compressed] [[additional movie_publisher.launch args]...]
@@ -51,7 +54,7 @@ rosrun movie_publisher movie_to_bag _movie:="${movie}" _bag:="${bag_tmp}" _topic
 
 echo "Merging into ${bag_out}"
 
-rosrun movie_publisher merge.py --output "${bag_out}" "${bag_in}" "${bag_tmp}" || exit 6
+rosrun cras_bag_tools merge_bag --compress "${bag_out}" "${bag_in}" "${bag_tmp}" || exit 6
 
 echo "Merged"
 

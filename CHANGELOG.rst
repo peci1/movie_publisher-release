@@ -1,6 +1,20 @@
+.. SPDX-License-Identifier: BSD-3-Clause
+.. SPDX-FileCopyrightText: Czech Technical University in Prague
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2.0.0 (2025-02-13)
+------------------
+* Cleaned up dependencies.
+* Refactor out MovieProcessorBase.
+* CI: Add license linting.
+* Compatibility with Melodic.
+* Improved documentation, rewritten movie_to_bag to C++, added tests.
+* Added support for ImgGPSDirection and GPSTrack expressed towards magnetic North.
+* Big rewrite. Moved movie_publisher to a subfolder. Added C++/libav implementation and metadata extraction plugins.
+* Contributors: Martin Pecka
 
 1.4.0 (2022-06-08)
 ------------------
