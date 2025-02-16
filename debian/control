@@ -1,0 +1,12 @@
+Source: ros-noetic-exiv2-metadata-extractor
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), catkin-lint <!nocheck>, libexiv2-dev, ros-noetic-catkin, ros-noetic-cras-cpp-common, ros-noetic-movie-publisher, ros-noetic-pluginlib, ros-noetic-roslint <!nocheck>, ros-noetic-rostest <!nocheck>
+Homepage: https://wiki.ros.org/exiv2_metadata_extractor
+Standards-Version: 3.9.2
+
+Package: ros-noetic-exiv2-metadata-extractor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, exiv2, ros-noetic-cras-cpp-common, ros-noetic-movie-publisher
+Description: Metadata extractor utilizing exiv2 library.
