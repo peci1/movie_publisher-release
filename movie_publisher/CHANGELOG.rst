@@ -5,6 +5,11 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.2 (2025-02-19)
+------------------
+* Fixed buildfarm issues.
+* Contributors: Martin Pecka
+
 2.0.1 (2025-02-16)
 ------------------
 * Try fixing build on buildfarm
