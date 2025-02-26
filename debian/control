@@ -1,0 +1,12 @@
+Source: ros-noetic-lensfun-metadata-extractor
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), catkin-lint <!nocheck>, libglib2.0-dev, liblensfun-dev, ros-noetic-catkin, ros-noetic-cras-cpp-common, ros-noetic-cv-bridge, ros-noetic-image-geometry, ros-noetic-movie-publisher, ros-noetic-pluginlib, ros-noetic-roslint <!nocheck>, ros-noetic-rostest <!nocheck>, ros-noetic-sensor-msgs
+Homepage: https://wiki.ros.org/lensfun_metadata_extractor
+Standards-Version: 3.9.2
+
+Package: ros-noetic-lensfun-metadata-extractor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liblensfun1, ros-noetic-cras-cpp-common, ros-noetic-cv-bridge, ros-noetic-image-geometry, ros-noetic-movie-publisher, ros-noetic-sensor-msgs
+Description: Metadata extractor utilizing the lensfun library.
