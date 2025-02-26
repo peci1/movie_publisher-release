@@ -1,0 +1,12 @@
+Source: ros-noetic-movie-publisher
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), catkin-lint <!nocheck>, libavcodec-dev, libavdevice-dev, libavfilter-dev, libavformat-dev, libavutil-dev, libmuparser-dev, libpostproc-dev, libswresample-dev, libswscale-dev, ros-noetic-catkin, ros-noetic-compass-conversions, ros-noetic-compass-msgs, ros-noetic-compressed-image-transport <!nocheck>, ros-noetic-cras-cpp-common, ros-noetic-cras-topic-tools, ros-noetic-gps-common, ros-noetic-image-geometry, ros-noetic-image-transport, ros-noetic-image-transport-codecs, ros-noetic-nodelet, ros-noetic-rosbag, ros-noetic-roscpp, ros-noetic-roslaunch <!nocheck>, ros-noetic-roslint <!nocheck>, ros-noetic-rostest <!nocheck>, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Homepage: https://www.ros.org/wiki/movie_publisher
+Standards-Version: 3.9.2
+
+Package: ros-noetic-movie-publisher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libmuparser-dev, libswscale-dev, ros-noetic-compass-conversions, ros-noetic-compass-msgs, ros-noetic-cras-bag-tools, ros-noetic-cras-cpp-common, ros-noetic-cras-topic-tools, ros-noetic-gps-common, ros-noetic-image-geometry, ros-noetic-image-transport, ros-noetic-image-transport-codecs, ros-noetic-nodelet, ros-noetic-rosbag, ros-noetic-rosbash-params (>= 1.0.2), ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Description: Using a video file as image topic source.
