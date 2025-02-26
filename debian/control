@@ -1,0 +1,12 @@
+Source: ros-noetic-movie-publisher-plugins
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: https://wiki.ros.org/movie_publisher
+Standards-Version: 3.9.2
+
+Package: ros-noetic-movie-publisher-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-movie-publisher-plugins-copyleft, ros-noetic-movie-publisher-plugins-nonfree, ros-noetic-movie-publisher-plugins-permissive
+Description: movie_publisher metadata plugins (all licenses)
