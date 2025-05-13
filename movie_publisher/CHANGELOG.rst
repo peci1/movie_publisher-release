@@ -5,6 +5,16 @@
 Changelog for package movie_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.0.1 (2025-05-13)
+------------------
+
+3.0.0 (2025-05-13)
+------------------
+* Finished the refactor for timed metadata support.
+* Big refactoring towards better handling of timed metadata.
+* Added more metadata: angular velocity, magnetic field and detected faces.
+* Contributors: Martin Pecka
+
 2.0.3 (2025-02-27)
 ------------------
 
