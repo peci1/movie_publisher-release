@@ -3,7 +3,7 @@
 <!-- SPDX-FileCopyrightText: Czech Technical University in Prague -->
 <package format="3">
   <name>movie_publisher_plugins_permissive</name>
-  <version>2.0.3</version>
+  <version>3.0.1</version>
   <description>movie_publisher metadata plugins with permissive licenses</description>
 
   <author email="peckama2@fel.cvut.cz">Martin Pecka</author>
@@ -18,6 +18,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>camera_info_manager_metadata_extractor</exec_depend>
+  <exec_depend>gpmf_metadata_extractor</exec_depend>
   <exec_depend>lensfun_metadata_extractor</exec_depend>
   <exec_depend>libexif_metadata_extractor</exec_depend>
 
