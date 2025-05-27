@@ -3,7 +3,7 @@
 <!-- SPDX-FileCopyrightText: Czech Technical University in Prague -->
 <package format="3">
   <name>gpmf_metadata_extractor</name>
-  <version>3.0.2</version>
+  <version>3.0.3</version>
   <description>Metadata extractor from GPMF (GoPro Metadata Format) streams.</description>
 
   <maintainer email="peckama2@fel.cvut.cz">Martin Pecka</maintainer>
@@ -19,6 +19,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>cras_cpp_common</build_depend>
+  <build_depend>eigen</build_depend>
   <build_depend>ffmpeg-dev</build_depend>
   <build_depend>movie_publisher</build_depend>
   <build_depend>pluginlib</build_depend>
