@@ -354,13 +354,16 @@ cras::expected<std::pair<MoviePlaybackState, sensor_msgs::ImageConstPtr>, std::s
 
       this->data->playbackState->setMovieStarted(true);
       this->data->playbackState->setStreamTime({tmpFrame->pts, timeBase});
-      this->data->playbackState->setSubclipTime(
-        StreamTime(this->data->playbackState->streamTime() - this->data->info->subclipStart()));
+      this->data->playbackState->setSubclipTime(StreamTime(std::max(
+        this->data->playbackState->streamTime() - this->data->info->subclipStart(),
+        StreamDuration(0, 0))));
 
       const AVRational framerateInv = av_inv_q(this->data->info->frameRate().av_q());
       this->data->playbackState->setFrameNum(av_rescale_q(tmpFrame->pts, timeBase, framerateInv));
       const auto ts = this->data->info->subclipStart().toStreamPTS(timeBase);
       this->data->playbackState->setSubclipFrameNum(av_rescale_q(tmpFrame->pts - ts, timeBase, framerateInv));
+
+      this->data->updateMetadata(this->data->playbackState->streamTime());
 
       AVFramePtr frame(av_frame_alloc());
       sensor_msgs::ImagePtr msg(new sensor_msgs::Image);
@@ -377,7 +380,7 @@ cras::expected<std::pair<MoviePlaybackState, sensor_msgs::ImageConstPtr>, std::s
         msg->encoding = sensor_msgs::image_encodings::BGR8;
       }
 
-      if (this->data->info->metadataRotation() != 0.0)
+      if (this->data->info->metadataRotation() != 0)
       {
         res = av_buffersrc_add_frame(this->data->filterBuffersrcContext, tmpFrame.get());
         if (res < 0)
@@ -409,8 +412,6 @@ cras::expected<std::pair<MoviePlaybackState, sensor_msgs::ImageConstPtr>, std::s
       msg->height = tmpFrame->height;
       for (const int size : frame->linesize)
         msg->step += size;
-
-      this->data->updateMetadata(this->data->playbackState->streamTime());
 
       for (const auto& processor : this->data->config->metadataProcessors())
       {
