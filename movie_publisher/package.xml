@@ -3,7 +3,7 @@
 <!-- SPDX-FileCopyrightText: Czech Technical University in Prague -->
 <package format="3">
   <name>movie_publisher</name>
-  <version>3.0.2</version>
+  <version>3.0.3</version>
   <description>Using a video file as image topic source.</description>
 
   <maintainer email="peckama2@fel.cvut.cz">Martin Pecka</maintainer>
@@ -20,6 +20,7 @@
 
   <build_depend>compass_conversions</build_depend>
   <build_depend>cras_topic_tools</build_depend>
+  <build_depend>eigen</build_depend>
   <build_depend>ffmpeg-dev</build_depend>
   <build_depend>image_geometry</build_depend>
   <build_depend>image_transport</build_depend>
